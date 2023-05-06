@@ -36,10 +36,15 @@ namespace PickRandomCards
         private static string RandomValue()
         {
             int value = random.Next(1, 14);
+            // retur AS if value equal 1
             if (value == 1) return "AS";
+            // retur Walet if value equal 11
             if (value == 11) return "Walet";
+            // retur Dama if value equal 12
             if (value == 12) return "Dama";
+            // retur Król if value equal 13
             if (value == 13) return "Król";
+            //Otherwise return value as string
             return value.ToString();
         }
     }
